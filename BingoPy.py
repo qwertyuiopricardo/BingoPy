@@ -1,2 +1,4 @@
 Nombre = str(input("Ingrese su nombre: "))
-N
+
+
+Cantidad_jugadores = int(input("Ingrese cantidad de juagdores: "))
