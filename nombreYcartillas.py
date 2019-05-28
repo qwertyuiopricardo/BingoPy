@@ -12,16 +12,16 @@ print(j)
 
 Pozo = len(cartilla)
 
+B = []
+import random
+for i in random.randint(1,81):
+    B.append(i)
+    print(B)
+
 if B == 15:
     Pozo = Pozo*5
 else:
     print("Faltan números en cartilla")
 
 print(Pozo)
-B = []
 
-
-import random
-for i in random.randint(1,81):
-    B.append(i)
-    print(B)
