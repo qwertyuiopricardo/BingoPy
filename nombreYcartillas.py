@@ -9,3 +9,22 @@ for i in range (n):
     m.append(cartilla)
     j.append(m)
 print(j)
+
+
+
+
+
+
+
+
+
+
+
+Pozo = len(cartilla)
+
+if B == 15:
+    Pozo = Pozo*5
+else:
+    print("Faltan números en cartilla")
+
+print(Pozo)
