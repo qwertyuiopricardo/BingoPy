@@ -9,3 +9,11 @@ for i in range (n):
     m.append(cartilla)
     j.append(m)
 print(j)
+
+B = []
+
+
+import random
+for i in random.randint(1,81):
+    B.append(i)
+    print(B)
