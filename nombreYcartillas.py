@@ -10,16 +10,6 @@ for i in range (n):
     j.append(m)
 print(j)
 
-
-
-
-
-
-
-
-
-
-
 Pozo = len(cartilla)
 
 if B == 15:
@@ -28,3 +18,10 @@ else:
     print("Faltan números en cartilla")
 
 print(Pozo)
+B = []
+
+
+import random
+for i in random.randint(1,81):
+    B.append(i)
+    print(B)
