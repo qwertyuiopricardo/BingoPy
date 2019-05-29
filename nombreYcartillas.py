@@ -10,18 +10,17 @@ for i in range (n):
     j.append(m)
 print(j)
 
-Pozo = len(cartilla)
-
 B = []
 import random
-for i in random.randint(1,81):
+for i in range(80):
     B.append(i)
-    print(B)
 
-if B == 15:
-    Pozo = Pozo*5
-else:
-    print("Faltan números en cartilla")
+C = []
+random.shuffle(B)
+B.remove(B[0])
+C.append(B[0])
+print(C)
 
-print(Pozo)
+
+
 
