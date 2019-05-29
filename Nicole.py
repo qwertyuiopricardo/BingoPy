@@ -1,25 +1,22 @@
 n = int(input("¿Cuántos jugarán?: "))
 j=[]
+N=[]
+pozo = 0
+suma = 0
 for i in range (n):
     nombre=input("Nombre de jugador: ")
-    cartilla=int(input("¿Cuántas cartillas escogerá?: "))
-
-    N=[]
+    cartilla=int(input("¿Cuántas cartillas escogerá?: "))  
     N.append(cartilla)
-    pozo = 0
-    if len(N) >=1:
-        pozo=pozo*5
-        
-        print(N)
-        
-    else:
-        print("No puede acceder al pozo")
-
-
     m=[]
     m.append(nombre)
     m.append(cartilla)
     j.append(m)
+
+for i in (N):
+    suma=suma+i
+
+pozo = suma*5
+
 print(j)
 print("El pozo es de: ", pozo, "soles")
 
@@ -36,3 +33,4 @@ while len(C)<=15:
     C.append(B[0])
 
 print(C)
+print("El juego ha finalizado")
