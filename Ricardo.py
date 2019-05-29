@@ -18,4 +18,4 @@ for i in range(80):
     B.remove(C)
     print(C)
 print(B)
-
+     
