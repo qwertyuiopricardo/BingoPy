@@ -1,16 +1,26 @@
 # Pidiendo el nombre de usuario
 while True:
+    import time
+    def timer(n):
+        while n!=0:
+            n=n-1
+            time.sleep(n)#time.sleep(seconds) #here you can mention seconds according to your requirement.
+            
+    
     n = int(input("¿Cuántos jugarán?: "))
     j=[]
+    N=[]
     for i in range (n):
         nombre=input("Nombre de jugador: ")
         cartilla=int(input("¿Cuántas cartillas escogerá?: "))
+        N.append(cartilla)
         m=[]
         m.append(nombre)
         m.append(cartilla)
         j.append(m)
     print(j)
     
+    suma=0
     for i in N:
         suma = suma + i
 
@@ -28,12 +38,17 @@ while True:
 
             D=[]
             D.append(C)
-            print(C)
+            print(C)     
             
-            print("¿Deseas continuar?: ")
-            m=input()
+            timer(4)
+    
+            m=input("¿Deseas continuar?: ")
         if m=="no":
             break
+     
+    reinicio=input("¿Desea reiniciar el juego?: ")
+    if reinicio=="no":
+        break
     print(D)
     
      
