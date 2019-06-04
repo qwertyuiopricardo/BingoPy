@@ -34,35 +34,40 @@ while True:
     
     import random
     B = []
-    import random
+
     for i in range(1,81):
         B.append(i)
 
     while True:
-        for i in range(1):
-            C=random.choice(B)
+        for i in range(15):
+            A = []
+            C = random.choice(B)
+            A.append(C)
+             
             B.remove(C)
+             
 
-            D=[]
-            D.append(C)
-            print(C)     
+            #D=[]
+            #D.append(C)
+            print("Bolilla n° ",C)     
             
             timer(4)
     
-            m=input("¿Deseas continuar?: ")
+        m=input("¿Deseas continuar?: ")
         if m=="no":
             break
+        
      
     reinicio=input("¿Desea reiniciar el juego?: ")
     if reinicio=="no":
+        
+        print("El juego ha finalizado")
+        
         break
-    print(D)
-    
-    for i in N:
-        suma = suma + i
+print(A)
 
-    suma2 = 0
-    suma2 = suma*5
-    print("El pozo es: ",suma2)
-    
+import tkinter
+tkinter.Tcl().eval('info patchlevel') 
+
+ 
        
