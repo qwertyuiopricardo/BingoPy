@@ -20,7 +20,7 @@ def dos():
     root = Tk()
     root.geometry("300x300+500+300") 
     root.title("Ventanas Emergentes")
-    root.config(bd=10)
+    root.config( bd=10)
 
 
     Button(root,text="Reiniciar Juego", command=uno).pack()
