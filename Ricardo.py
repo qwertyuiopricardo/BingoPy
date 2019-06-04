@@ -42,9 +42,9 @@ while True:
 
             #D=[]
             #D.append(C)
-            print(C)     
+            print("Bolilla n° ",C)     
             
-            timer(5)
+            timer(4)
     
         m=input("¿Deseas continuar?: ")
         if m=="no":
