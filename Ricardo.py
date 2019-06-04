@@ -1,13 +1,16 @@
+import time
+from tkinter import *
+from tkinter import ttk
+class Aplicacion():
+    def __init__(self):
+    
+    def timer(z):
+        while z!=0:
+            z=z-1
+            time.sleep(z)#time.sleep(seconds) #here you can mention seconds according to your requirement.
 
 # Pidiendo el nombre de usuario
 while True:
-    import time
-    def timer(n):
-        while n!=0:
-            n=n-1
-            time.sleep(n)#time.sleep(seconds) #here you can mention seconds according to your requirement.
-            
-    
     n = int(input("¿Cuántos jugarán?: "))
     j=[]
     N=[]
