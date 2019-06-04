@@ -63,5 +63,3 @@ while True:
         
         break
     
-    
-     
