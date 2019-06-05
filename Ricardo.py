@@ -1,10 +1,5 @@
 import time
-from tkinter import *
-from tkinter import ttk
-class Aplicacion():
-    def __init__(self):
-    
-    def timer(z):
+def timer(z):
         while z!=0:
             z=z-1
             time.sleep(z)#time.sleep(seconds) #here you can mention seconds according to your requirement.
