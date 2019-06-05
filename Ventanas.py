@@ -12,7 +12,7 @@ def Reinicio():
 
 def Cierre():
 	'''
-	Regresa 'SI' o 'NEL'
+	Regresa 'SI' o 'NO'
 	'''
 	r = mb.askquestion("Pregunta!", "¿Deseas finalizar el juego?")
 	Label(root,text=r).pack()
