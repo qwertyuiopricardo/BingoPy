@@ -1,29 +1,42 @@
 from tkinter import *
 from tkinter import messagebox as mb
+from tkinter import colorchooser
+from tkinter import filedialog
 
-def uno():
+def Reinicio():
 	'''
-	Regresa "SI" o "NO"
+	Regresa 'SI' o 'NO'
 	'''
-    r = mb.askquestion("Pregunta!", "¿Deseas reiniciar el juego?")
-    Label(root,text=r).pack()
+	r = mb.askyesno("Pregunta!", "¿Deseas reiniciar el juego?")
+	Label(root,text=r).pack()
 
-def dos():
+def Cierre():
 	'''
-	Regresa "SI" o "NO"
+	Regresa 'SI' o 'NEL'
 	'''
-    r = mb.askquestion("Pregunta!", "¿Deseas finalizar el juego?")
-    Label(root,text=r).pack()
-
+	r = mb.askquestion("Pregunta!", "¿Deseas finalizar el juego?")
+	Label(root,text=r).pack()
 
 	
-    root = Tk()
-    root.geometry("300x300+500+300") 
-    root.title("Ventanas Emergentes")
-    root.config( bd=10)
+def guardar():
+	'''
+	Regresa la ruta absoluta del archivo modo de apertura = w y la codificación (juego de caracteres)
+	'''
+	fichero = filedialog.asksaveasfile(title="Guardar",mode="w+",defaultextension=".py",filetypes = (("Fichero texto","*.txt"),("Fichero PDF","*.pdf"),("Todos los ficheros","*.*")))
+	if fichero is not None:
+		fichero.write("print('Hola Mundo - Creado desde el GUI')\n")
+		fichero.write("input('ctrl+z para salir')")
+		fichero.close()
+	Label(root,text=fichero).pack()	
+	
+root = Tk()
+root.geometry("300x300+500+300") # +500+300 es para indicar en que parte de la pantalla se ubicara
+root.title("Crear Pop-Up")
+root.config(bd=10)
 
 
-    Button(root,text="Reiniciar Juego", command=uno).pack()
-    Button(root,text="Finalizar Juego",command=dos).pack()
+Button(root,text="Reiniciar", command=Reinicio).pack()
+Button(root,text="Finalizar",command=Cierre).pack()
+Button(root,text="Guardar", command=guardar).pack()
 
 root.mainloop()
