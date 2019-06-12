@@ -16,3 +16,4 @@ class InsertData(wx.Frame):
 
     vbox.Add(gs, 0, wx.ALL, 10)
     vbox.Add(-1,30)
+    
