@@ -62,15 +62,17 @@ while True:
         
     ganador = input("¿Conforme?")
     if ganador == "si":
-        print("Tenemos un ganador. ¡FELICIDADES!")    
+        print("Tenemos un ganador. ¡FELICIDADES!")
+        suma2 = 0
+        suma2 = suma*5
+        print("El pozo es: ",suma2, "soles", "Y usted ganó:",suma2, "soles")
+      
 
     suma=0
     for i in N:
         suma = suma + i
 
-    suma2 = 0
-    suma2 = suma*5
-    print("El pozo es: ",suma2, "soles", "Y usted ganó:",suma2, "soles") 
+     
                        
     reinicio=input("¿Desea reiniciar el juego?: ")
     if reinicio=="no":
