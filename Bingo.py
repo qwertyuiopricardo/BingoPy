@@ -56,10 +56,10 @@ while True:
         if m=="no":
             break
         
-        print(D) 
+        
         
 
-        
+    print(D)     
     ganador = input("¿Conforme?")
     if ganador == "si":
         print("Tenemos un ganador. ¡FELICIDADES!")
