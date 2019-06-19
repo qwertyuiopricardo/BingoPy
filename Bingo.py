@@ -1,4 +1,9 @@
-# Definiendo tiempo de espera después de cada bolilla
+# Definiendo tiempo de espera después de cada bolill
+import random
+B=[]
+for i in range(1,81):
+    B.append(i)
+
 while True:
     import time
     def timer(n):
@@ -32,35 +37,41 @@ while True:
     suma2 = suma*5
     
     
-    import random
-    B = []
-
-    for i in range(1,81):
-        B.append(i)
-        
+    D=[]
     while True:
-        for i in range(15):
-            A = []
-            C = random.choice(B)
-            A.append(C)
+        for i in range(1):
+            C=random.choice(B)
             B.remove(C)
-            print(A)
 
-        for i in range(15):
             
-            #D=[]
-            #D.append(C)
-            print("Bolilla n° ",C)     
+            
+            print("Bolilla n° ",C) 
+
+            
+            D.append(C)
+            
             
             timer(4)
-    
         m=input("¿Deseas continuar?: ")
         if m=="no":
             break
-        ganador = input("¿Conforme?")
-        if ganador == "si":
-            break
-     
+        
+        print(D) 
+        
+
+        
+    ganador = input("¿Conforme?")
+    if ganador == "si":
+        print("Tenemos un ganador. ¡FELICIDADES!")    
+
+    suma=0
+    for i in N:
+        suma = suma + i
+
+    suma2 = 0
+    suma2 = suma*5
+    print("El pozo es: ",suma2, "soles", "Y usted ganó:",suma2, "soles") 
+                       
     reinicio=input("¿Desea reiniciar el juego?: ")
     if reinicio=="no":
         
@@ -68,12 +79,3 @@ while True:
         
         break
     
-    
-
-
-
-print("El pozo es:",suma2)
-
-
- 
-       
